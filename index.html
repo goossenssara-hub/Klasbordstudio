@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#033663">
+  <title>Klasbordstudio | Studio SaGo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+  <div class="top-left">
+    <button class="iconbtn mobile-only" id="menuBtn" aria-label="Menu">☰</button>
+    <div class="brand"><img class="brand-logo" src="assets/klasbordstudio-logo.png" alt="Klasbordstudio by Studio SaGo"><div class="brand-fallback" style="display:none"><strong>Klasbordstudio</strong><span>by Studio SaGo</span></div></div>
+  </div>
+  <div class="page-cluster">
+    <button class="top-icon" id="undoBtn" title="Ongedaan">↶</button>
+    <button class="top-icon" id="prevPageBtn" title="Vorige pagina">‹</button>
+    <button class="page-chip" id="pageLabel">Pagina 1</button>
+    <button class="top-icon" id="nextPageBtn" title="Volgende pagina">›</button>
+    <button class="top-icon" id="addPageBtn" title="Nieuwe pagina">＋</button>
+  </div>
+  <div class="top-actions">
+    <button class="top-icon" id="saveBtn" title="Opslaan">💾</button>
+    <button class="soft compact-present" id="presentBtn">▶ <span>Presenteren</span></button>
+    <button class="primary compact-full" id="fullscreenBtn">⛶ <span>Volledig scherm</span></button>
+    
+  </div>
+  <div class="more-menu" id="moreMenu">
+    <button id="renamePageBtn">✎ Pagina hernoemen</button>
+    <button id="duplicatePageBtn">⧉ Pagina dupliceren</button>
+    <button id="deletePageBtn">🗑 Pagina verwijderen</button>
+    <hr>
+    <button id="clearBtn">⌫ Bord leegmaken</button>
+    <button id="exportBtn">⇩ Exporteren</button>
+    <button id="importBtn">⇧ Importeren</button>
+    <input id="importFile" type="file" accept=".json" hidden>
+  </div>
+</header>
+
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+  <div class="rail-brand">＋</div>
+  <nav id="categories" class="category-rail">
+    <button class="cat active" data-cat="favorieten" title="Favorieten"><span><img class="category-icon-img" src="assets/icons/icon-star.png" alt=""></span><small>Favorieten</small></button>
+    <button class="cat" data-cat="klas" title="Klasbeheer"><span><img class="category-icon-img" src="assets/icons/icon-class-board.png" alt=""></span><small>Klas</small></button>
+    <button class="cat" data-cat="rekenen" title="Rekenen"><span><img class="category-icon-img" src="assets/icons/icon-calculator.png" alt=""></span><small>Rekenen</small></button>
+    <button class="cat" data-cat="taal" title="Taal"><span><img class="category-icon-img" src="assets/icons/icon-letter-a.png" alt=""></span><small>Taal</small></button>
+    <button class="cat" data-cat="visuals" title="Visualiseren"><span><img class="category-icon-img" src="assets/icons/icon-image.png" alt=""></span><small>Beeld</small></button>
+    <button class="cat" data-cat="media" title="Media"><span><img class="category-icon-img" src="assets/icons/icon-video-clapper.png" alt=""></span><small>Media</small></button>
+    <button class="cat" data-cat="interactie" title="Interactie"><span><img class="category-icon-img" src="assets/icons/icon-gamepad.png" alt=""></span><small>Spelen</small></button>
+    <button class="cat" data-cat="dagstart" title="Dagstart"><span><img class="category-icon-img" src="assets/icons/icon-sun-clean.png" alt=""></span><small>Dagstart</small></button>
+    <button class="cat" data-cat="leerkracht" title="Leerkrachttools"><span><img class="category-icon-img" src="assets/icons/icon-tools.png" alt=""></span><small>Tools</small></button>
+  </nav>
+<div class="copyright-mark">© 2026 Studio SaGo</div>
+</aside>
+<aside class="tool-drawer open" id="toolDrawer">
+  <div class="drawer-head"><div><small>BORDTOOLS</small><strong id="drawerTitle">Favorieten</strong></div><button id="closeDrawer" class="drawer-close" title="Inklappen">‹</button></div>
+  <div class="search-wrap"><input id="toolSearch" placeholder="Zoek een bordtool…"></div>
+  <section class="tool-grid" id="toolGrid"></section>
+</aside>
+
+    <main class="main">
+      <section class="board-commandbar">
+  <div class="board-name"><span class="eyebrow">KLASBORD</span><input id="boardTitle" value="Mijn klasbord" aria-label="Les of bordnaam"></div>
+  <div class="board-quick">
+<button class="soft gsap-icon-btn" id="classBtn"><img src="assets/icons/icon-group-clean.png" alt=""><span>Mijn klas</span></button>
+<button class="soft gsap-icon-btn" id="templateBtn"><img src="assets/icons/icon-class-board.png" alt=""><span>Sjablonen</span></button>
+<button class="soft gsap-icon-btn" id="bgBtn" title="Achtergrond"><img src="assets/icons/icon-palette.png" alt=""></button>
+<button class="soft gsap-icon-btn" id="fitBtn"><img src="assets/icons/icon-refresh.png" alt=""><span>Orden</span></button>
+<button class="soft gsap-icon-btn" id="blurBtn"><img src="assets/icons/icon-eye.png" alt=""><span>Focus</span></button>
+<button class="soft gsap-icon-btn" id="gridToggle"><img src="assets/icons/icon-hundred-grid.png" alt=""><span>Raster</span></button>
+<button class="soft gsap-icon-btn" id="annotateBtn"><img src="assets/icons/icon-pencil.png" alt=""><span>Tekenen</span></button>
+<button class="soft gsap-icon-btn" id="noteBtn"><img src="assets/icons/icon-pencil.png" alt=""><span>Notitie</span></button>
+</div>
+</section>
+
+      <section class="board-section">
+        <div class="board-meta"><h2 id="boardHeading">Mijn klasbord</h2><span class="autosave-status" id="autosaveStatus">Automatisch opgeslagen</span></div><div class="page-tabs" id="pageTabs"></div><div class="board grid-on" id="board">
+          <canvas id="annotationCanvas" width="1600" height="900"></canvas>
+          <div class="focus-overlay" id="focusOverlay"><div>Focusmodus</div><small>Klik of druk op 1 om het bord opnieuw te tonen.</small></div>
+          <div class="empty-state" id="emptyState">
+            <button class="empty-dismiss" id="emptyDismiss" type="button" title="Melding verbergen">×</button>
+            <div class="empty-icon">＋</div>
+            <strong>Voeg een tool toe</strong>
+            <span>Kies links een bordtool. De bibliotheek kan volledig worden ingeklapt.
+              <button class="empty-start" id="emptyStart" type="button">Start met leeg bord</button></span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="drawer-scrim" id="drawerScrim"></div>
+<template id="widgetTemplate">
+    <article class="widget">
+      <div class="widget-bar">
+        <strong class="widget-title"></strong>
+        <div>
+          <button class="mini duplicate" title="Dupliceren">⧉</button>
+          <button class="mini remove" title="Verwijder dit bordonderdeel">×</button>
+        </div>
+      </div>
+      <div class="widget-body"></div>
+    </article>
+  </template>
+
+
+<div class="modal" id="classModal"><div class="modal-card"><button class="modal-x" data-close="classModal">×</button><h2>Mijn klas</h2><p>Deze centrale klaslijst wordt gebruikt door naamkiezer, groepen en punten.</p><textarea id="classList">Emma
+Noor
+Lars
+Milan
+Lina
+Adam
+Finn
+Lou</textarea><button class="primary" id="saveClassBtn">Klas bewaren</button></div></div>
+<div class="modal" id="templateModal"><div class="modal-card wide"><button class="modal-x" data-close="templateModal">×</button><h2>Bordtemplates</h2><div class="template-grid" id="templateGrid"></div></div></div>
+<div class="toast" id="toast"></div>
+<div class="presentation-toolbar"><button id="pPrev">←</button><button id="pExit">Stop</button><button id="pNext">→</button></div>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="wordbanks.js"></script>
+<script src="werkbladstudio-getalbeelden.js"></script>
+<script src="protection.js"></script>
+<script src="app.js"></script>
+<footer class="kbs-site-copyright" aria-label="Copyright">© 2026 Studio SaGo · Klasbordstudio</footer>
+</body>
+</html>

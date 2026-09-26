@@ -115,6 +115,9 @@ const tools=[
 {id:"poll",cat:"interactie",icon:"📊",name:"Poll",desc:"Snelle klassikale stemming"},
 {id:"numbersenserace",cat:"interactie",icon:"⚡",name:"Getalgevoel-race",desc:"Twee teams herkennen getalbeelden"},
 {id:"duel",cat:"interactie",icon:"⚔",name:"Duel",desc:"Twee leerlingen spelen gelijktijdig naast elkaar"},
+{id:"rekenrace",cat:"interactie",icon:"🏁",name:"Rekenrace",desc:"Twee spelers rekenen tegelijk naar de finish"},
+{id:"basketbalrekenen",cat:"interactie",icon:"🏀",name:"Basketbal rekenen",desc:"Mik op het juiste antwoord en scoor"},
+{id:"breukenhelden",cat:"interactie",icon:"¾",name:"Breukenhelden",desc:"Herken breuken en ontdek gelijkwaardige breuken"},
 {id:"image",cat:"media",icon:"🖼️",name:"Afbeelding",desc:"Toon een afbeelding via URL"},
 {id:"pdfboard",cat:"media",icon:"📄",name:"PDF op bord",desc:"Upload een PDF en schrijf of markeer erboven"},
 {id:"video",cat:"media",icon:"▶️",name:"Video",desc:"Embed een lesvideo"},
@@ -203,7 +206,7 @@ const tools=[
 {id:'ggdkgv',cat:'rekenen',icon:'∩',name:'GGD & KGV',desc:'Onderzoek grootste gemene deler en kleinste gemene veelvoud'},
 {id:'ruler',cat:'leerkracht',icon:'⌇',name:'Liniaal',desc:'Digitale liniaal'}
 ];
-const TOOL_ICON_IMAGES={"timer":"assets/icons/icon-alarm-clock.png","stoplicht":"assets/icons/icon-traffic-light.png","namen":"assets/icons/icon-user.png","spinner":"assets/icons/icon-spinner.png","dice":"assets/icons/icon-dice.png","note":"assets/icons/icon-pencil.png","whiteboard":"assets/icons/icon-chalkboard.png","numberline":"assets/icons/icon-ruler.png","tenframe":"assets/icons/icon-ten-frame.png","hundreds":"assets/icons/icon-hundred-grid.png","base10":"assets/icons/icon-mab-official.png","fractions":"assets/icons/icon-fraction.png","clock":"assets/icons/icon-clock.png","geoboard":"assets/icons/icon-geoboard-v2.svg","words":"assets/icons/icon-letter-a.png","wordflasher":"assets/icons/icon-letter-a.png","flashcards":"assets/icons/icon-open-book.png","stopwatch":"assets/icons/icon-stopwatch.png","visualtimer":"assets/icons/icon-clock.png","worksymbols":"assets/icons/icon-group.png","groups":"assets/icons/icon-group-clean.png","scoreboard":"assets/icons/icon-trophy.png","behaviorrace":"assets/icons/icon-rocket.png","schedule":"assets/icons/icon-checklist.png","event":"assets/icons/icon-calendar.png","sound":"assets/icons/icon-megaphone.png","poll":"assets/icons/icon-bar-chart.png","numbersenserace":"assets/icons/icon-rocket.png","duel":"assets/icons/icon-gamepad.png","qrcode":"assets/icons/icon-qr.png","link":"assets/icons/icon-link.png","image":"assets/icons/icon-image.png","pdfboard":"assets/icons/icon-pdf.png","video":"assets/icons/icon-video.png","embed":"assets/icons/icon-laptop.png","stickers":"assets/icons/icon-star.png","multiplication":"assets/icons/icon-operations.png","splits":"assets/icons/icon-splits-v2.svg","daystart":"assets/icons/icon-sun-clean.png","trafficstop":"assets/icons/icon-stop-sign.svg","silence":"assets/icons/icon-silence.svg","voice":"assets/icons/icon-microphone.png","exit":"assets/icons/icon-home.png","birthday":"assets/icons/icon-party.png","points":"assets/icons/icon-star.png","directions":"assets/icons/icon-checklist.png","daystartpro":"assets/icons/icon-sun-clean.png","richdaystarter":"assets/icons/icon-calendar-day.png","attendance":"assets/icons/icon-hand.png","calendar":"assets/icons/icon-calendar.png","question":"assets/icons/icon-chat.png","weather":"assets/icons/icon-partly-cloudy.png","routine":"assets/icons/icon-check.png","rewardjar":"assets/icons/icon-trophy-2.png","randomnum":"assets/icons/icon-calculator.png","placevalue":"assets/icons/icon-placevalue-table.svg","rekenrek":"assets/icons/icon-abacus.png","numberimages":"assets/icons/icon-ten-frame.png","mathflasher":"assets/icons/icon-calculator.png","money":"assets/icons/icon-money.png","quickquiz":"assets/icons/icon-quiz.png","progress":"assets/icons/icon-bar-chart.png","liveclass":"assets/icons/icon-laptop.png","seating":"assets/icons/icon-chair.png","helpqueue":"assets/icons/icon-help-queue.svg","turntracker":"assets/icons/icon-turns.svg","classrules":"assets/icons/icon-class-rules.svg","numberwall":"assets/icons/icon-number-wall-v2.svg","emptynumberline":"assets/icons/icon-ruler.png","fractionwall":"assets/icons/icon-fraction.png","ratio":"assets/icons/icon-ratio-table.svg","rounding":"assets/icons/icon-rounding.svg","patterns":"assets/icons/icon-puzzle.png","coordinates":"assets/icons/icon-target.png","buildnumber":"assets/icons/icon-build-number-v2.svg","handwriting":"assets/icons/icon-pencil.png","articlemarker":"assets/icons/icon-pencil.png","sentencebuilder":"assets/icons/icon-letter-a.png","syllables":"assets/icons/icon-open-book.png","dictation":"assets/icons/icon-dictation.svg","conceptmap":"assets/icons/icon-puzzle-2.png","venn":"assets/icons/icon-puzzle.png","timeline":"assets/icons/icon-calendar.png","tschema":"assets/icons/icon-class-board.png","covercard":"assets/icons/icon-cover-card.svg","spotlight":"assets/icons/icon-magnifier.png","buzzer":"assets/icons/icon-buzzer.svg","teamquiz":"assets/icons/icon-quiz.png","truefalse":"assets/icons/icon-true-false.svg","bingo":"assets/icons/icon-bingo.svg","memorygame":"assets/icons/icon-puzzle-2.png","daygoal":"assets/icons/icon-day-goal.svg","wordofday":"assets/icons/icon-lightbulb.png","countdown":"assets/icons/icon-hourglass.png","randomletter":"assets/icons/icon-letter-a.png","screenveil":"assets/icons/icon-screen-curtain.svg","ruler":"assets/icons/icon-ruler.png","fractionstrips":"assets/icons/icon-fraction-strips.svg","fractioncircles":"assets/icons/icon-fraction-circles.svg","decimalpercent":"assets/icons/icon-decimal-percent.svg","angletool":"assets/icons/icon-angle-v2.svg","balancescale":"assets/icons/icon-balance-v2.svg","timeschart":"assets/icons/icon-times-chart.svg"};
+const TOOL_ICON_IMAGES={"timer":"assets/icons/icon-alarm-clock.png","stoplicht":"assets/icons/icon-traffic-light.png","namen":"assets/icons/icon-user.png","spinner":"assets/icons/icon-spinner.png","dice":"assets/icons/icon-dice.png","note":"assets/icons/icon-pencil.png","whiteboard":"assets/icons/icon-chalkboard.png","numberline":"assets/icons/icon-ruler.png","tenframe":"assets/icons/icon-ten-frame.png","hundreds":"assets/icons/icon-hundred-grid.png","base10":"assets/icons/icon-mab-official.png","fractions":"assets/icons/icon-fraction.png","clock":"assets/icons/icon-clock.png","geoboard":"assets/icons/icon-geoboard-v2.svg","words":"assets/icons/icon-letter-a.png","wordflasher":"assets/icons/icon-letter-a.png","flashcards":"assets/icons/icon-open-book.png","stopwatch":"assets/icons/icon-stopwatch.png","visualtimer":"assets/icons/icon-clock.png","worksymbols":"assets/icons/icon-group.png","groups":"assets/icons/icon-group-clean.png","scoreboard":"assets/icons/icon-trophy.png","behaviorrace":"assets/icons/icon-rocket.png","schedule":"assets/icons/icon-checklist.png","event":"assets/icons/icon-calendar.png","sound":"assets/icons/icon-megaphone.png","poll":"assets/icons/icon-bar-chart.png","numbersenserace":"assets/icons/icon-rocket.png","duel":"assets/icons/icon-gamepad.png","rekenrace":"assets/icons/icon-rocket.png","breukenhelden":"assets/icons/icon-fraction.png","qrcode":"assets/icons/icon-qr.png","link":"assets/icons/icon-link.png","image":"assets/icons/icon-image.png","pdfboard":"assets/icons/icon-pdf.png","video":"assets/icons/icon-video.png","embed":"assets/icons/icon-laptop.png","stickers":"assets/icons/icon-star.png","multiplication":"assets/icons/icon-operations.png","splits":"assets/icons/icon-splits-v2.svg","daystart":"assets/icons/icon-sun-clean.png","trafficstop":"assets/icons/icon-stop-sign.svg","silence":"assets/icons/icon-silence.svg","voice":"assets/icons/icon-microphone.png","exit":"assets/icons/icon-home.png","birthday":"assets/icons/icon-party.png","points":"assets/icons/icon-star.png","directions":"assets/icons/icon-checklist.png","daystartpro":"assets/icons/icon-sun-clean.png","richdaystarter":"assets/icons/icon-calendar-day.png","attendance":"assets/icons/icon-hand.png","calendar":"assets/icons/icon-calendar.png","question":"assets/icons/icon-chat.png","weather":"assets/icons/icon-partly-cloudy.png","routine":"assets/icons/icon-check.png","rewardjar":"assets/icons/icon-trophy-2.png","randomnum":"assets/icons/icon-calculator.png","placevalue":"assets/icons/icon-placevalue-table.svg","rekenrek":"assets/icons/icon-abacus.png","numberimages":"assets/icons/icon-ten-frame.png","mathflasher":"assets/icons/icon-calculator.png","money":"assets/icons/icon-money.png","quickquiz":"assets/icons/icon-quiz.png","progress":"assets/icons/icon-bar-chart.png","liveclass":"assets/icons/icon-laptop.png","seating":"assets/icons/icon-chair.png","helpqueue":"assets/icons/icon-help-queue.svg","turntracker":"assets/icons/icon-turns.svg","classrules":"assets/icons/icon-class-rules.svg","numberwall":"assets/icons/icon-number-wall-v2.svg","emptynumberline":"assets/icons/icon-ruler.png","fractionwall":"assets/icons/icon-fraction.png","ratio":"assets/icons/icon-ratio-table.svg","rounding":"assets/icons/icon-rounding.svg","patterns":"assets/icons/icon-puzzle.png","coordinates":"assets/icons/icon-target.png","buildnumber":"assets/icons/icon-build-number-v2.svg","handwriting":"assets/icons/icon-pencil.png","articlemarker":"assets/icons/icon-pencil.png","sentencebuilder":"assets/icons/icon-letter-a.png","syllables":"assets/icons/icon-open-book.png","dictation":"assets/icons/icon-dictation.svg","conceptmap":"assets/icons/icon-puzzle-2.png","venn":"assets/icons/icon-puzzle.png","timeline":"assets/icons/icon-calendar.png","tschema":"assets/icons/icon-class-board.png","covercard":"assets/icons/icon-cover-card.svg","spotlight":"assets/icons/icon-magnifier.png","buzzer":"assets/icons/icon-buzzer.svg","teamquiz":"assets/icons/icon-quiz.png","truefalse":"assets/icons/icon-true-false.svg","bingo":"assets/icons/icon-bingo.svg","memorygame":"assets/icons/icon-puzzle-2.png","daygoal":"assets/icons/icon-day-goal.svg","wordofday":"assets/icons/icon-lightbulb.png","countdown":"assets/icons/icon-hourglass.png","randomletter":"assets/icons/icon-letter-a.png","screenveil":"assets/icons/icon-screen-curtain.svg","ruler":"assets/icons/icon-ruler.png","fractionstrips":"assets/icons/icon-fraction-strips.svg","fractioncircles":"assets/icons/icon-fraction-circles.svg","decimalpercent":"assets/icons/icon-decimal-percent.svg","angletool":"assets/icons/icon-angle-v2.svg","balancescale":"assets/icons/icon-balance-v2.svg","timeschart":"assets/icons/icon-times-chart.svg"};
 const DEFAULT_FAVORITES=["timer","namen","spinner","dice","numberline","tenframe","clock","whiteboard"];
 function getFavorites(){try{const x=JSON.parse(localStorage.getItem("kbs_favorites_v19")||"null");return Array.isArray(x)?x:DEFAULT_FAVORITES.slice()}catch{return DEFAULT_FAVORITES.slice()}}
 function saveFavorites(ids){localStorage.setItem("kbs_favorites_v19",JSON.stringify([...new Set(ids)]))}
@@ -331,6 +334,13 @@ function findFreeWidgetPosition(width=520,height=360){
 }
 function fitNewWidgetToContent(w){
  if(w.classList.contains("spotlight-widget")||w.classList.contains("bare-cover-widget")||w.dataset.type==="clock")return;
+ if(w.dataset.type==="breukenhelden"){
+   const margin=18,bw=Math.max(360,board.clientWidth||1200),bh=Math.max(420,board.clientHeight||800);
+   const targetW=Math.min(980,bw-margin*2),targetH=Math.min(690,bh-margin*2);
+   w.style.width=targetW+"px";w.style.height=targetH+"px";
+   requestAnimationFrame(()=>{const left=Math.max(margin,Math.min(parseFloat(w.style.left)||margin,bw-targetW-margin)),top=Math.max(margin,Math.min(parseFloat(w.style.top)||margin,bh-targetH-margin));w.style.left=left+"px";w.style.top=top+"px";w.classList.add("initially-fitted");savePage();scheduleSave()});
+   return;
+ }
  const margin=18,bw=Math.max(360,board.clientWidth||1200),bh=Math.max(420,board.clientHeight||800);
  const body=w.querySelector(".widget-body"),bar=w.querySelector(".widget-bar");
  // Start roomy, then measure the real content instead of forcing the teacher to resize immediately.
@@ -451,7 +461,17 @@ function bodyFor(id){
  if(id==="numberline")return `<div class="numberline-tool"><div class="module-settings nl-settings"><label>Van <input class="nl-start" type="number" value="0"></label><label>Tot <input class="nl-end" type="number" value="1000"></label><label>Stap <select class="nl-step"><option>1</option><option>5</option><option>10</option><option>20</option><option>25</option><option>50</option><option selected>100</option></select></label><button class="pill nl-new">Toon lijn</button></div><div class="numberline"><svg class="nl-arcs" viewBox="0 0 1000 170" preserveAspectRatio="none"></svg><div class="nl-line"></div><div class="ticks"></div></div><div class="nl-exercise"><strong>Klik twee getallen om een sprong te tekenen.</strong><div class="nl-feedback"></div><div class="row widget-controls"><button class="pill nl-clear-arcs">Wis sprongen</button><button class="primary nl-check">Controleer</button></div></div></div>`;
  if(id==="tenframe")return `<div class="tenframe">${Array.from({length:10},()=>`<button class="cell"></button>`).join("")}</div><div class="row" style="margin-top:10px"><button class="pill clearcells">Wis</button></div>`;
  if(id==="hundreds")return `<div class="hundreds">${Array.from({length:100},(_,i)=>`<button>${i+1}</button>`).join("")}</div><div class="row" style="margin-top:8px"><button class="pill clear100">Wis markeringen</button></div>`;
- if(id==="base10")return `<div class="mab-controlbar"><label><input class="mab-auto" type="checkbox" checked> automatisch omwisselen</label><label><input class="mab-show" type="checkbox" checked> getal tonen</label></div><div class="mab-exact-stage"></div><div class="row compact-actions"><button class="pill add100">+100</button><button class="pill add10">+10</button><button class="pill add1">+1</button><button class="pill clearbase">Wis</button></div><div class="big-result baseval">111</div>`;
+ if(id==="base10")return `<div class="mab-game">
+  <div class="module-settings mab-game-settings">
+    <label>Doelgetal <input class="mab-target" type="number" min="1" max="9999" value="246"></label>
+    <label>Bovengrens <select class="mab-upper-limit" aria-label="Bovengrens voor MAB-oefeningen"><option value="10">10</option><option value="20">20</option><option value="100">100</option><option value="1000" selected>1.000</option><option value="9999">9.999</option><option value="custom">Eigen…</option></select></label>
+    <label class="mab-custom-limit-wrap" hidden>Eigen bovengrens <input class="mab-custom-limit" type="number" min="1" max="9999" value="1000"></label>
+    <button class="pill mab-random" type="button">🎲 Nieuwe oefening</button>
+  </div>
+  <div class="mab-task">Bouw <strong class="mab-target-label">246</strong> met MAB-materiaal</div>
+  <div class="mab-palette" aria-label="MAB-materiaal"><button class="mab-palette-item mab-palette-thousand" data-kind="thousand" type="button"><span class="mab-preview mab-preview-thousand"></span><b>Duizendtal</b></button><button class="mab-palette-item mab-palette-hundred" data-kind="hundred" type="button"><span class="mab-preview mab-preview-hundred"></span><b>Honderdtal</b></button><button class="mab-palette-item mab-palette-ten" data-kind="ten" type="button"><span class="mab-preview mab-preview-ten"></span><b>Tiental</b></button><button class="mab-palette-item mab-palette-unit" data-kind="unit" type="button"><span class="mab-preview mab-preview-unit"></span><b>Eenheid</b></button></div>
+  <div class="mab-build-stage"><div class="mab-column-lines" aria-hidden="true"></div><div class="mab-place-head"><span data-kind="thousand">D</span><span data-kind="hundred">H</span><span data-kind="ten">T</span><span data-kind="unit">E</span></div><div class="mab-stage-footer"><div class="mab-countline">0 D · 0 H · 0 T · 0 E = 0</div><div class="row mab-game-actions"><button class="primary mab-check mab-student-action" type="button">✓ Nakijken</button><div class="mab-delete-one" aria-label="Eén MAB-stuk wissen"><button class="pill mab-remove-one" data-kind="thousand" type="button" title="Wis één duizendtal">− D</button><button class="pill mab-remove-one" data-kind="hundred" type="button" title="Wis één honderdtal">− H</button><button class="pill mab-remove-one" data-kind="ten" type="button" title="Wis één tiental">− T</button><button class="pill mab-remove-one" data-kind="unit" type="button" title="Wis één eenheid">− E</button></div><button class="pill mab-clear" type="button">Wis alles</button></div><div class="mab-feedback">Klik op materiaal voor een nette structuur of sleep het zelf op het bord.</div></div></div>
+ </div>`;
  if(id==="fractions")return `<div class="fraction-lab"><div class="module-settings fraction-lab-settings"><div class="fraction-mode"><button class="pill active" data-mode="strip">Strook</button><button class="pill" data-mode="circle">Cirkel</button><button class="pill" data-mode="both">Beide</button></div><label>Teller <input class="fl-num" type="number" min="0" max="20" value="3"></label><label>Noemer <input class="fl-den" type="number" min="1" max="20" value="4"></label><button class="pill fl-random">Nieuwe breuk</button><button class="pill fl-clear">Leegmaken</button></div><div class="fraction-lab-stage"></div><div class="fraction-lab-readout"></div></div>`;
  if(id==="clock")return `<div class="mode-toggle"><button class="clockanalog active" type="button">Analoog</button><button class="clockdigital" type="button">Digitaal</button></div><div class="clock-settings"><label>Streepjes <select class="clockticks"><option value="hour">uren</option><option value="half">halve uren</option><option value="quarter">kwartieren</option><option value="five" selected>5 minuten</option><option value="minute">1 minuut</option></select></label></div><div class="clockwrap">${clockFaceHTML()}</div><div class="row"><input class="clocktime" type="time" value="02:30"><button class="pill now" type="button">Nu</button></div>`;
  if(id==="geoboard")return `<div class="geoboard-tool"><div class="module-settings row"><label>Kleur <input class="geo-color" type="color" value="#28b9aa"></label><button class="pill geo-close" type="button">Sluit vorm</button><button class="pill geo-undo" type="button">Laatste lijn weg</button><button class="pill geo-clear" type="button">Wis</button></div><div class="geoboard interactive"><svg class="geo-lines" viewBox="0 0 600 600" preserveAspectRatio="none"></svg>${Array.from({length:49},(_,i)=>`<button class="peg" type="button" data-i="${i}" aria-label="Punt ${i+1}"></button>`).join("")}</div><div class="geo-help">Tik opeenvolgende punten aan om een vorm te tekenen.</div></div>`;
@@ -505,6 +525,37 @@ muis</textarea></div><div class="row" style="margin-top:8px"><button class="pill
  if(id==="silence")return `<div class="silence-board"><div class="silence-icon"><img src="${workSymbol("silence").src}" alt="Stil werken"></div><input class="silencetitle" value="We werken in stilte"><div class="silence-rules"><label><span>1</span><input value="Ik werk zelfstandig."></label><label><span>2</span><input value="Ik blijf rustig op mijn werkplek."></label><label><span>3</span><input value="Ik steek mijn hand op als ik hulp nodig heb."></label></div></div>`;
  if(id==="voice")return `<div class="voice-tool"><div class="module-settings voice-picker">${[workSymbol("silence"),workSymbol("whisper"),workSymbol("discuss"),workSymbol("present")].map((x,i)=>`<button class="voice ${i===0?"active":""}" data-level="${i}" data-label="${x.label}" data-src="${x.src}"><img src="${x.src}" alt=""><span>${i}</span><small>${x.label}</small></button>`).join("")}</div><div class="voice-display"><img src="${workSymbol("silence").src}" alt=""><strong>Niveau 0 · ${workSymbol("silence").label}</strong></div></div>`;
  if(id==="exit")return `<div class="exit-ticket"><input value="Hoe goed begreep je de les?"><textarea>Wat heb je vandaag geleerd?</textarea><div class="exit-results"><button data-v="1">😕</button><button data-v="2">😐</button><button data-v="3">🙂</button><button data-v="4">🤩</button></div><div class="name-result exitcount">0 reacties</div><button class="pill resetexit">Reset</button></div>`;
+ if(id==="breukenhelden")return `<div class="bh-game">
+  <div class="bh-hud">
+    <div class="bh-progress-label">Oefening <strong class="bh-round">1</strong> van <strong class="bh-total-label">6</strong></div>
+    <div class="bh-progress" aria-hidden="true"><i class="bh-progress-fill"></i></div>
+    <div class="bh-stat" title="Score">⭐ <strong class="bh-score">0</strong></div>
+    <div class="bh-stat" title="Reeks">🔥 <strong class="bh-streak">0</strong></div>
+    <button class="pill bh-settings-toggle" type="button" aria-expanded="false" title="Instellingen voor de leerkracht">⚙ Instellingen</button>
+  </div>
+  <div class="bh-settings" hidden role="dialog" aria-label="Instellingen Breukenhelden">
+    <div class="bh-settings-head"><div><strong>Instellingen</strong><span>Pas het volgende spel aan.</span></div><button class="bh-settings-close" type="button" aria-label="Instellingen sluiten">×</button></div>
+    <div class="bh-settings-grid">
+      <label><span>Aantal oefeningen</span><select class="bh-total"><option>4</option><option selected>6</option><option>8</option><option>10</option><option>12</option></select></label>
+      <label><span>Na een juist antwoord</span><select class="bh-advance"><option value="manual" selected>Volgende-knop</option><option value="auto">Automatisch doorgaan</option></select></label>
+      <fieldset><legend>Noemers</legend><div class="bh-den-list">${[2,3,4,5,6,8].map(n=>`<label><input class="bh-den" type="checkbox" value="${n}" checked><span>${n}</span></label>`).join("")}</div></fieldset>
+      <label class="bh-check"><input class="bh-progressive" type="checkbox" checked><span>Moeilijkheid geleidelijk opbouwen</span></label>
+      <label class="bh-check"><input class="bh-show-hint" type="checkbox" checked><span>Hintknop tonen</span></label>
+      <label class="bh-check"><input class="bh-show-equivalent" type="checkbox" checked><span>Vereenvoudigde breuk tonen na juist antwoord</span></label>
+    </div>
+    <div class="bh-settings-actions"><button class="primary bh-apply" type="button">Nieuw spel starten</button></div>
+  </div>
+  <div class="bh-stage">
+    <section class="bh-card">
+      <div class="bh-copy"><div class="bh-instruction">Kijk goed naar de cirkel en kies de juiste breuk.</div><h3>Welk deel van de cirkel is ingekleurd?</h3></div>
+      <div class="bh-circle" aria-live="polite"></div>
+      <div class="bh-answers" aria-label="Antwoorden"></div>
+      <div class="bh-feedback" aria-live="polite"></div>
+      <div class="bh-actions"><button class="pill bh-hint" type="button">💡 Hint</button><button class="primary bh-next" type="button" hidden>Volgende →</button></div>
+    </section>
+  </div>
+  <div class="bh-finish" hidden><div class="bh-finish-star">⭐</div><strong>Goed gespeeld!</strong><span class="bh-final-score"></span><button class="primary bh-again" type="button">Nog een keer</button></div>
+ </div>`;
  if(id==="birthday")return `<div class="birthday"><div class="birthday-visual"><img class="birthday-hero" src="assets/icons/icon-birthday-user.png" alt="Verjaardagsfeest"><div class="birthday-age-badge" aria-live="polite"><strong>8</strong><span>jaar</span></div></div><h2>Hiep hiep hoera!</h2><div class="module-settings row"><label>Naam<input class="birthdayname" value="Naam"></label><label>Leeftijd<input class="birthdayage" type="number" value="8" min="1" max="99"></label></div><p class="birthdaytext">Vandaag vieren we Naam! Naam is 8 jaar! 🎉</p></div>`;
  if(id==="points")return `<div class="points-grid">${["Team 1","Team 2","Team 3","Team 4"].map(n=>`<div class="point-card"><input value="${n}"><div class="point-num">0</div><div class="point-actions"><button class="pminus">−</button><button class="pplus">＋</button></div></div>`).join("")}</div><p style="font-size:11px;color:#42617d">Voor positieve klasfeedback; pas namen en teams vrij aan.</p>`;
  if(id==="directions")return `<div class="directions">${["Neem je boek.","Open op de juiste pagina.","Werk zelfstandig.","Kijk je werk na."].map((x,i)=>`<div class="direction-step"><span>${i+1}</span><input value="${x}"></div>`).join("")}</div>`;
@@ -544,6 +595,41 @@ muis</textarea></div><div class="row" style="margin-top:8px"><button class="pill
  if(id==="behaviorrace")return `<div class="race-tool"><div class="module-settings race-editor"><textarea class="race-names" placeholder="Eén team of leerling per regel">Team rood
 Team blauw</textarea><label>Finish <input class="race-finish" type="number" min="3" max="30" value="10"></label><div class="row"><button class="primary race-build">Start race</button><button class="pill race-reset">Reset</button></div></div><div class="race-track"></div><div class="race-winner"></div></div>`;
  if(id==="numbersenserace")return `<div class="ns-race"><div class="ns-settings"><label>Tot<input class="ns-max" type="number" min="5" max="100" value="20"></label><label>Getalbeeld<select class="ns-type"><option value="mix">Willekeurig</option>${GETALBEELDEN_MATERIALS.filter(x=>!["money","fingers"].includes(x.id)).map(x=>`<option value="${x.id}">${x.name}</option>`).join("")}</select></label><button class="pill ns-new" type="button">Nieuw bord</button><button class="pill ns-reset" type="button">Reset</button></div><div class="ns-score"><span class="ns-team-red active">Team rood <b class="ns-redscore">0</b></span><span class="ns-round">Ronde <b>1</b></span><span class="ns-team-green">Team groen <b class="ns-greenscore">0</b></span></div><div class="ns-question"><div class="ns-visual"></div><div class="ns-options"></div></div><div class="ns-feedback">Team rood start.</div></div>`;
+ if(id==="basketbalrekenen")return `<div class="bb-game">
+ <div class="bb-settings module-settings">
+  <label>Bewerking<select class="bb-operation"><option value="mix">Gemengd</option><option value="+">Optellen</option><option value="-">Aftrekken</option><option value="×">Vermenigvuldigen</option><option value="÷">Delen</option></select></label>
+  <label>Niveau<select class="bb-level"><option value="10">tot 10</option><option value="20" selected>tot 20</option><option value="100">tot 100</option><option value="1000">tot 1000</option></select></label>
+  <label>Shotclock<select class="bb-time"><option value="10">10 s</option><option value="15" selected>15 s</option><option value="20">20 s</option><option value="0">geen timer</option></select></label>
+  <button class="primary bb-new" type="button">Nieuw spel</button>
+ </div>
+ <div class="bb-scorebar"><div><small>SCORE</small><strong class="bb-score">0</strong></div><div class="bb-problem">Klaar?</div><div><small>REEKS</small><strong class="bb-streak">0</strong></div></div>
+ <div class="bb-court">
+  <div class="bb-shotclock"><small>SHOTCLOCK</small><strong class="bb-clock">15</strong></div>
+  <div class="bb-hoops">${[0,1,2].map(i=>`<button class="bb-hoop" type="button" data-i="${i}" aria-label="Basket ${i+1}"><span class="bb-board"><i></i></span><span class="bb-rim"></span><span class="bb-net"></span><strong class="bb-answer">?</strong></button>`).join("")}</div>
+  <div class="bb-message" aria-live="polite">Kies de basket met het juiste antwoord.</div>
+  <div class="bb-ball-shadow"></div>
+  <div class="bb-ball" aria-hidden="true"><i class="bb-seam bb-seam-h"></i><i class="bb-seam bb-seam-v"></i><i class="bb-arc bb-arc-a"></i><i class="bb-arc bb-arc-b"></i></div>
+ </div>
+</div>`;
+
+ if(id==="rekenrace")return `<div class="rr-game">
+  <div class="module-settings rr-settings">
+   <div class="rr-setting-group"><strong>Bewerkingen</strong><label><input class="rr-op" type="checkbox" value="add" checked> +</label><label><input class="rr-op" type="checkbox" value="sub" checked> −</label><label><input class="rr-op" type="checkbox" value="mul"> ×</label><label><input class="rr-op" type="checkbox" value="div"> ÷</label></div>
+   <label>Tot <input class="rr-max" type="number" min="10" max="1000" value="100"></label>
+   <label>Finish <select class="rr-finish"><option value="5">5 juist</option><option value="10" selected>10 juist</option><option value="15">15 juist</option><option value="20">20 juist</option></select></label>
+   <button class="primary rr-new" type="button">🏁 Nieuwe race</button>
+  </div>
+  <div class="rr-track-wrap">
+   <div class="rr-track-labels"><span>START</span><strong>REKENRACE</strong><span>FINISH 🏁</span></div>
+   <div class="rr-lane"><b>1</b><div class="rr-road"><span class="rr-runner rr-runner-a">🏃‍♂️</span><span class="rr-flag">🏁</span></div></div>
+   <div class="rr-lane"><b>2</b><div class="rr-road"><span class="rr-runner rr-runner-b">🏃‍♀️</span><span class="rr-flag">🏁</span></div></div>
+  </div>
+  <div class="rr-duel">
+   <section class="rr-player rr-a"><header><input class="rr-name-a" value="Speler 1" aria-label="Naam speler 1"><strong class="rr-score-a">0 / 10</strong></header><div class="rr-question-a">Klaar?</div><div class="rr-answers-a"></div><div class="rr-feedback-a" aria-live="polite"></div></section>
+   <section class="rr-player rr-b"><header><input class="rr-name-b" value="Speler 2" aria-label="Naam speler 2"><strong class="rr-score-b">0 / 10</strong></header><div class="rr-question-b">Klaar?</div><div class="rr-answers-b"></div><div class="rr-feedback-b" aria-live="polite"></div></section>
+  </div>
+  <div class="rr-result" aria-live="polite"></div>
+ </div>`;
  if(id==="richdaystarter")return `<div class="rich-daystarter"><div class="module-settings rds-settings"><div class="rds-edit-grid"><label>Weetje<input class="rds-fact-edit"></label><button class="pill rds-newfact">Ander weetje</button><label>Klasboodschap<input class="rds-message" value="Fijn dat je er bent!"></label><label>Woord van de dag<input class="rds-word" value="nieuwsgierig"></label><label>Betekenis<input class="rds-meaning" value="graag iets willen weten"></label><label>Zin van de dag<input class="rds-sentence" value="Vandaag ontdekken we iets nieuws."></label><label>Spellingvraag<input class="rds-spelling" value="Schrijf het meervoud van boom."></label><label>Leesvraag<input class="rds-reading" value="Wat is het belangrijkste woord in de zin?"></label><label>Taaldenkertje<input class="rds-languageq" value="Noem een synoniem voor blij."></label></div></div><div class="rds-top"><div><span class="rds-day"></span><strong class="rds-date"></strong><small class="rds-season"></small></div><div class="rds-clock"></div></div><div class="rds-grid"><div><b>Week</b><span class="rds-week"></span></div><div><b>Weetje</b><span class="rds-fact"></span></div></div><div class="rds-message-out">Fijn dat je er bent!</div><div class="rds-language"><article><small>WOORD VAN DE DAG</small><strong class="rds-word-out"></strong><span class="rds-meaning-out"></span></article><article><small>ZIN VAN DE DAG</small><strong class="rds-sentence-out"></strong></article><article><small>TAAL</small><span class="rds-spelling-out"></span><span class="rds-reading-out"></span><span class="rds-languageq-out"></span></article></div></div>`;
  if(id==="flashcards")return `<div class="flashcards-pro">
   <div class="flashcard-settings module-settings">
@@ -766,7 +852,200 @@ function wireWidget(w){
  if(type==="hundreds"){w.querySelectorAll(".hundreds button").forEach(b=>b.onclick=()=>b.classList.toggle("marked"));w.querySelector(".clear100").onclick=()=>w.querySelectorAll(".hundreds button").forEach(b=>b.classList.remove("marked"))}
 
  if(type==="numberline"){let selected=[],arcs=[];const ticks=w.querySelector(".ticks"),svg=w.querySelector(".nl-arcs");const build=()=>{let a=+w.querySelector(".nl-start").value||0,b=+w.querySelector(".nl-end").value||1000,step=Math.max(1,+w.querySelector(".nl-step").value||100);if(b<=a)b=a+step*10;let vals=[];for(let x=a;x<=b&&vals.length<31;x+=step)vals.push(x);ticks.innerHTML=vals.map((v,i)=>`<button class="tick" data-v="${v}" style="left:${i/(vals.length-1)*100}%"><span>${v}</span></button>`).join("");ticks.querySelectorAll(".tick").forEach(btn=>btn.onclick=()=>{selected.push(+btn.dataset.v);btn.classList.add("selected");if(selected.length===2){let [x,y]=selected,all=[...ticks.querySelectorAll(".tick")],i1=all.findIndex(q=>+q.dataset.v===x),i2=all.findIndex(q=>+q.dataset.v===y),x1=i1/(all.length-1)*1000,x2=i2/(all.length-1)*1000,mid=(x1+x2)/2,h=Math.min(125,35+Math.abs(i2-i1)*12);arcs.push({x,y});svg.insertAdjacentHTML("beforeend",`<path d="M ${x1} 145 Q ${mid} ${145-h} ${x2} 145"/><text x="${mid}" y="${125-h}" text-anchor="middle">${y-x>=0?"+":""}${y-x}</text>`);selected=[];all.forEach(q=>q.classList.remove("selected"))}})};w.querySelector(".nl-new").onclick=build;w.querySelector(".nl-clear-arcs").onclick=()=>{arcs=[];svg.innerHTML=""};w.querySelector(".nl-check").onclick=()=>w.querySelector(".nl-feedback").textContent=arcs.length?"✓ Sprongen getekend.":"Teken eerst minstens één sprong.";build()}
- if(type==="base10"){let h=1,t=1,u=1,out=w.querySelector(".baseval"),stage=w.querySelector(".mab-exact-stage");const paint=()=>{if(w.querySelector(".mab-auto").checked){if(u>=10){t+=Math.floor(u/10);u%=10}if(t>=10){h+=Math.floor(t/10);t%=10}}let value=h*100+t*10+u;stage.innerHTML=renderWerkbladstudioGetalbeeld("mab",value);out.textContent=value;out.hidden=!w.querySelector(".mab-show").checked};w.querySelector(".add100").onclick=()=>{h++;paint()};w.querySelector(".add10").onclick=()=>{t++;paint()};w.querySelector(".add1").onclick=()=>{u++;paint()};w.querySelector(".clearbase").onclick=()=>{h=t=u=0;paint()};w.querySelector(".mab-auto").onchange=paint;w.querySelector(".mab-show").onchange=paint;paint()}
+ if(type==="base10"){
+  const game=w.querySelector(".mab-game"),stage=w.querySelector(".mab-build-stage"),target=w.querySelector(".mab-target"),label=w.querySelector(".mab-target-label"),feedback=w.querySelector(".mab-feedback"),countline=w.querySelector(".mab-countline"),upperLimit=w.querySelector(".mab-upper-limit"),customLimit=w.querySelector(".mab-custom-limit"),customLimitWrap=w.querySelector(".mab-custom-limit-wrap");
+  const values={thousand:1000,hundred:100,ten:10,unit:1};
+  const pieceSvg=kind=>{const o='rgba(3,54,99,.28)',l='rgba(255,255,255,.58)';if(kind==='unit')return `<svg viewBox="0 0 7 7"><rect x="1" y="1" width="4.4" height="4.4" rx="1" fill="#f4ca45" stroke="${o}" stroke-width=".7"/></svg>`;if(kind==='ten'){let q=`<rect x="1" y="1" width="4.4" height="44" rx="1" fill="#69aa5e" stroke="${o}"/>`;for(let n=1;n<10;n++)q+=`<line x1="1" y1="${1+n*4.4}" x2="5.4" y2="${1+n*4.4}" stroke="${l}" stroke-width=".6"/>`;return `<svg viewBox="0 0 7 46">${q}</svg>`}if(kind==='hundred'){let q=`<rect x="1" y="1" width="44" height="44" rx="1" fill="#53aadb" stroke="${o}"/>`;for(let n=1;n<10;n++){q+=`<line x1="${1+n*4.4}" y1="1" x2="${1+n*4.4}" y2="45" stroke="${l}" stroke-width=".6"/><line x1="1" y1="${1+n*4.4}" x2="45" y2="${1+n*4.4}" stroke="${l}" stroke-width=".6"/>`}return `<svg viewBox="0 0 46 46">${q}</svg>`}let q=`<polygon points="2,14 14,2 63,2 51,14" fill="#ef6b63" stroke="${o}"/><polygon points="51,14 63,2 63,51 51,63" fill="#c94f49" stroke="${o}"/><rect x="2" y="14" width="49" height="49" rx="1" fill="#ef5b56" stroke="${o}"/>`;for(let n=1;n<10;n++){let a=2+n*4.9,b=14+n*4.9;q+=`<line x1="${a}" y1="14" x2="${a}" y2="63" stroke="${l}" stroke-width=".6"/><line x1="2" y1="${b}" x2="51" y2="${b}" stroke="${l}" stroke-width=".6"/>`}return `<svg viewBox="0 0 65 65">${q}</svg>`};
+  w.querySelectorAll('.mab-preview').forEach((el,i)=>el.innerHTML=pieceSvg(['thousand','hundred','ten','unit'][i]));
+  const pieces=()=>[...stage.querySelectorAll('.mab-drag-piece')];
+  const stats=()=>{let a={thousand:0,hundred:0,ten:0,unit:0};pieces().forEach(e=>a[e.dataset.kind]++);return {...a,value:a.thousand*1000+a.hundred*100+a.ten*10+a.unit}};
+  const update=()=>{let a=stats();countline.textContent=`${a.thousand} D · ${a.hundred} H · ${a.ten} T · ${a.unit} E = ${a.value}`};
+  const structured=(kind,index)=>{
+    const width=Math.max(620,stage.clientWidth);
+    const height=Math.max(280,stage.clientHeight);
+    const kinds=visibleKinds();
+    const colW=width/kinds.length;
+    const col=Math.max(0,kinds.indexOf(kind));
+    const left=col*colW;
+
+    // De onderste zone is voor teller, Nakijken, Wis en feedback.
+    const top=62;
+    const footerReserve=Math.min(150,Math.max(118,height*.24));
+    const usableH=Math.max(145,height-top-footerReserve);
+    const sidePad=Math.max(10,colW*.05);
+
+    // Basisafmetingen van de vier Werkbladstudio-MAB-stukken.
+    const base={
+      thousand:{w:78,h:78,gx:12,gy:12,maxCols:3},
+      hundred:{w:70,h:70,gx:12,gy:12,maxCols:3},
+      ten:{w:22,h:84,gx:14,gy:12,maxCols:5},
+      unit:{w:30,h:30,gx:12,gy:12,maxCols:5}
+    }[kind];
+
+    // Voor E blijft de didactische 5-structuur altijd 5 boven + 5 onder.
+    if(kind==='unit'){
+      const cols=5;
+      const rows=2;
+      const availW=Math.max(120,colW-sidePad*2);
+      const naturalW=cols*base.w+(cols-1)*base.gx;
+      const naturalH=rows*base.h+(rows-1)*base.gy;
+      const scale=Math.min(1,availW/naturalW,usableH/naturalH);
+      const w=base.w*scale,h=base.h*scale,gx=base.gx*scale,gy=base.gy*scale;
+      const totalW=cols*w+(cols-1)*gx;
+      const row=Math.floor(index/5),c=index%5;
+      return [left+(colW-totalW)/2+c*(w+gx), top+row*(h+gy), scale];
+    }
+
+    // Kies automatisch het raster dat 0–9 stukken volledig in de beschikbare zone houdt.
+    const count=Math.max(1,pieces().filter(e=>e.dataset.kind===kind).length+1);
+    let best=null;
+    for(let cols=1;cols<=Math.min(base.maxCols,count);cols++){
+      const rows=Math.ceil(count/cols);
+      const naturalW=cols*base.w+(cols-1)*base.gx;
+      const naturalH=rows*base.h+(rows-1)*base.gy;
+      const availW=Math.max(80,colW-sidePad*2);
+      const scale=Math.min(1,availW/naturalW,usableH/naturalH);
+      const score=scale-(rows*.002); // grootste leesbare materiaal wint
+      if(!best||score>best.score)best={cols,rows,scale,score};
+    }
+    const cols=best.cols,scale=Math.max(.58,best.scale);
+    const w=base.w*scale,h=base.h*scale,gx=base.gx*scale,gy=base.gy*scale;
+    const rows=Math.ceil(count/cols);
+    const totalW=cols*w+(cols-1)*gx;
+    const totalH=rows*h+(rows-1)*gy;
+    const row=Math.floor(index/cols),c=index%cols;
+    const startY=top+Math.max(0,(usableH-totalH)*.08);
+    return [left+(colW-totalW)/2+c*(w+gx), startY+row*(h+gy), scale];
+  };
+  const reflowKind=(kind)=>{
+    const list=pieces().filter(e=>e.dataset.kind===kind);
+    list.forEach((el,i)=>{
+      // structured() kijkt naar huidige count; corrigeer +1-effect door tijdelijke marker.
+      const pos=structured(kind,i);
+      el.style.left=pos[0]+'px';
+      el.style.top=pos[1]+'px';
+      el.style.setProperty('--mab-auto-scale',pos[2]||1);
+      el.style.transform=`scale(${pos[2]||1})`;
+      el.style.transformOrigin='top left';
+    });
+  };
+  const makePiece=(kind,x=null,y=null)=>{
+    let same=pieces().filter(e=>e.dataset.kind===kind).length;
+    let pos=null;
+    if(x===null){pos=structured(kind,same);x=pos[0];y=pos[1]}
+    let el=document.createElement('div');
+    el.className=`mab-drag-piece mab-drag-${kind}`;
+    el.dataset.kind=kind;
+    el.innerHTML=pieceSvg(kind);
+    el.style.left=x+'px';el.style.top=y+'px';
+    if(pos&&pos[2]){el.style.transform=`scale(${pos[2]})`;el.style.transformOrigin='top left'}
+    stage.appendChild(el);
+
+    // Na toevoegen herschikken zodat alle stukken met dezelfde actuele count worden berekend.
+    if(pos)reflowKind(kind);
+
+    let active=false,dx=0,dy=0;
+    el.onpointerdown=e=>{
+      active=true;el.setPointerCapture(e.pointerId);
+      let r=el.getBoundingClientRect();dx=e.clientX-r.left;dy=e.clientY-r.top;
+      el.classList.add('dragging')
+    };
+    el.onpointermove=e=>{
+      if(!active)return;
+      let r=stage.getBoundingClientRect();
+      const footerReserve=Math.min(150,Math.max(118,stage.clientHeight*.24));
+      el.style.transform='scale(1)';
+      el.style.left=Math.max(0,Math.min(stage.clientWidth-el.offsetWidth,e.clientX-r.left-dx))+'px';
+      el.style.top=Math.max(46,Math.min(stage.clientHeight-footerReserve-el.offsetHeight,e.clientY-r.top-dy))+'px'
+    };
+    el.onpointerup=()=>{active=false;el.classList.remove('dragging')};
+    el.ondblclick=()=>{
+      el.remove();
+      reflowKind(kind);
+      update()
+    };
+    update()
+  };
+  w.querySelectorAll('.mab-palette-item').forEach(btn=>{let start=null,moved=false;btn.onpointerdown=e=>{start={x:e.clientX,y:e.clientY};moved=false;btn.setPointerCapture?.(e.pointerId)};btn.onpointermove=e=>{if(start&&Math.hypot(e.clientX-start.x,e.clientY-start.y)>8)moved=true};btn.onpointerup=e=>{if(!start)return;let r=stage.getBoundingClientRect();if(moved&&e.clientX>=r.left&&e.clientX<=r.right&&e.clientY>=r.top&&e.clientY<=r.bottom)makePiece(btn.dataset.kind,e.clientX-r.left-20,Math.max(38,e.clientY-r.top-20));else if(!moved)makePiece(btn.dataset.kind);start=null}});
+  const getUpperLimit=()=>{
+    const raw=upperLimit?.value==='custom'?Number(customLimit?.value):Number(upperLimit?.value);
+    return Math.max(1,Math.min(9999,Math.floor(raw||1000)));
+  };
+  const visibleKinds=()=>{
+    const max=getUpperLimit();
+    if(max<=20)return ['ten','unit'];
+    if(max<=100)return ['hundred','ten','unit'];
+    return ['thousand','hundred','ten','unit'];
+  };
+  const applyPlaceValueVisibility=()=>{
+    const kinds=visibleKinds();
+    game.dataset.mabColumns=String(kinds.length);
+    const lineLayer=game.querySelector('.mab-column-lines');
+    if(lineLayer){
+      lineLayer.innerHTML='';
+      for(let i=1;i<kinds.length;i++){
+        const line=document.createElement('i');
+        line.style.left=(i*100/kinds.length)+'%';
+        lineLayer.appendChild(line);
+      }
+    }
+    game.querySelectorAll('.mab-palette-item').forEach(el=>el.hidden=!kinds.includes(el.dataset.kind));
+    game.querySelectorAll('.mab-place-head [data-kind]').forEach(el=>el.hidden=!kinds.includes(el.dataset.kind));
+    game.querySelectorAll('.mab-remove-one').forEach(el=>el.hidden=!kinds.includes(el.dataset.kind));
+    // Materiaal uit een nu verborgen hogere plaatswaarde verwijderen.
+    pieces().filter(el=>!kinds.includes(el.dataset.kind)).forEach(el=>el.remove());
+    update();
+  };
+  const randomTarget=()=>{
+    const max=getUpperLimit();
+    return 1+Math.floor(Math.random()*max);
+  };
+  const setTarget=n=>{
+    const max=getUpperLimit();
+    n=Math.max(1,Math.min(max,Math.floor(Number(n)||1)));
+    target.max=max;target.value=n;label.textContent=n;
+    feedback.className='mab-feedback';
+    feedback.textContent='Bouw het getal met MAB-materiaal en klik daarna op Nakijken.';
+  };
+  const applyUpperLimit=()=>{
+    const custom=upperLimit?.value==='custom';
+    if(customLimitWrap)customLimitWrap.hidden=!custom;
+    const max=getUpperLimit();
+    target.max=max;
+    if(Number(target.value)>max)setTarget(max);
+    applyPlaceValueVisibility();
+  };
+  if(upperLimit)upperLimit.onchange=()=>{applyUpperLimit();pieces().forEach(e=>e.remove());setTarget(randomTarget());update()};
+  if(customLimit)customLimit.oninput=()=>{if(upperLimit?.value==='custom'){applyUpperLimit();setTarget(Math.min(Number(target.value)||1,getUpperLimit()))}};
+  target.oninput=()=>setTarget(target.value);
+  w.querySelector('.mab-random').onclick=()=>{setTarget(randomTarget());pieces().forEach(e=>e.remove());update()};w.querySelectorAll('.mab-remove-one').forEach(btn=>btn.onclick=()=>{
+    const kind=btn.dataset.kind,list=pieces().filter(e=>e.dataset.kind===kind);
+    if(!list.length){feedback.className='mab-feedback';feedback.textContent='Er is geen materiaal van deze soort om te wissen.';return}
+    list[list.length-1].remove();reflowKind(kind);update();
+    feedback.className='mab-feedback';feedback.textContent='Eén MAB-stuk gewist.';
+  });
+  w.querySelector('.mab-clear').onclick=()=>{pieces().forEach(e=>e.remove());update();feedback.className='mab-feedback';feedback.textContent='Het MAB-bord is leeggemaakt.'};w.querySelector('.mab-check').onclick=()=>{
+    let a=stats(),goal=Number(target.value),ok=a.value===goal;
+    feedback.className='mab-feedback '+(ok?'correct':'incorrect');
+    if(ok){
+      feedback.textContent=`✓ Juist! ${a.thousand} D + ${a.hundred} H + ${a.ten} T + ${a.unit} E = ${goal}. Nieuwe oefening...`;
+    }else{
+      let d=goal-a.value;
+      feedback.textContent=`✗ Nog niet juist. Je materiaal stelt ${a.value} voor. ${d>0?`Je hebt nog ${d} nodig.`:`Je hebt ${Math.abs(d)} te veel.`} Nieuwe oefening...`;
+    }
+    const checkBtn=w.querySelector('.mab-check');
+    checkBtn.disabled=true;
+    setTimeout(()=>{
+      const next=randomTarget();
+      pieces().forEach(e=>e.remove());
+      setTarget(next);
+      update();
+      feedback.className='mab-feedback';
+      feedback.textContent=`Nieuwe oefening: bouw ${next} met MAB-materiaal.`;
+      checkBtn.disabled=false;
+    },1400);
+  };applyUpperLimit();setTarget(target.value);update();
+ }
  if(type==="clock"){
    const wrap=w.querySelector(".clockwrap"),time=w.querySelector(".clocktime"),ticks=w.querySelector(".clockticks"),analogBtn=w.querySelector(".clockanalog"),digitalBtn=w.querySelector(".clockdigital"),nowBtn=w.querySelector(".now");
    if(wrap&&time&&ticks&&analogBtn&&digitalBtn){
@@ -802,6 +1081,99 @@ function wireWidget(w){
  if(type==="behaviorrace"){let track=w.querySelector(".race-track"),finish=w.querySelector(".race-finish"),names=w.querySelector(".race-names"),winner=w.querySelector(".race-winner"),state=[];const paint=()=>{let max=Math.max(3,+finish.value||10);track.innerHTML=state.map((r,i)=>`<div class="race-lane"><strong>${r.name}</strong><div class="race-road"><div class="race-runner" style="left:${Math.min(100,r.score/max*100)}%">🚀</div><i style="width:${Math.min(100,r.score/max*100)}%"></i></div><span>${r.score}/${max}</span><button data-i="${i}" data-d="-1">−</button><button data-i="${i}" data-d="1">＋</button></div>`).join("");track.querySelectorAll("button").forEach(b=>b.onclick=()=>{let r=state[+b.dataset.i],max=Math.max(3,+finish.value||10);r.score=Math.max(0,Math.min(max,r.score+(+b.dataset.d)));winner.textContent=r.score>=max?`${r.name} bereikt de finish!`:"";paint();scheduleSave()})};const build=()=>{state=names.value.split(/\n|,/).map(x=>x.trim()).filter(Boolean).map(name=>({name,score:0}));paint()};w.querySelector(".race-build").onclick=build;w.querySelector(".race-reset").onclick=()=>{state.forEach(x=>x.score=0);winner.textContent="";paint()};build()}
  if(type==="numbersenserace"){let red=0,green=0,round=1,turn="red",answer=0,adv=null;const score=()=>{w.querySelector(".ns-redscore").textContent=red;w.querySelector(".ns-greenscore").textContent=green;w.querySelector(".ns-round b").textContent=round;w.querySelector(".ns-team-red").classList.toggle("active",turn==="red");w.querySelector(".ns-team-green").classList.toggle("active",turn==="green")};const make=()=>{clearTimeout(adv);const max=Math.max(5,+w.querySelector(".ns-max").value||20);answer=1+Math.floor(Math.random()*max);let wanted=w.querySelector(".ns-type").value,mats=GETALBEELDEN_MATERIALS.filter(m=>!["money","fingers"].includes(m.id)&&m.min<=answer&&m.max>=answer),m=wanted==="mix"?mats[Math.floor(Math.random()*mats.length)]:(GETALBEELDEN_MATERIALS.find(x=>x.id===wanted&&x.min<=answer&&x.max>=answer)||mats[0]);w.querySelector(".ns-visual").innerHTML=renderWerkbladstudioGetalbeeld(m.id,answer,{splitMode:"whole"});let set=new Set([answer]);while(set.size<4)set.add(Math.max(0,answer-5+Math.floor(Math.random()*11)));w.querySelector(".ns-options").innerHTML=[...set].sort(()=>Math.random()-.5).map(n=>`<button type="button" data-n="${n}">${n}</button>`).join("");w.querySelector(".ns-feedback").textContent=`${turn==="red"?"Team rood":"Team groen"} is aan de beurt.`;w.querySelectorAll(".ns-options button").forEach(btn=>btn.onclick=()=>{if(+btn.dataset.n!==answer){btn.classList.add("wrong");w.querySelector(".ns-feedback").textContent="Nog eens proberen — hetzelfde bord blijft staan.";return}btn.classList.add("correct");turn==="red"?red++:green++;score();w.querySelector(".ns-feedback").textContent="✓ Juist! Volgend bord…";adv=setTimeout(()=>{turn=turn==="red"?"green":"red";round++;score();make()},650)})};w.querySelector(".ns-new").onclick=make;w.querySelector(".ns-reset").onclick=()=>{red=green=0;round=1;turn="red";score();make()};score();make()}
 
+ if(type==="breukenhelden"){
+  const roundEl=w.querySelector(".bh-round"),totalLabel=w.querySelector(".bh-total-label"),fill=w.querySelector(".bh-progress-fill"),scoreEl=w.querySelector(".bh-score"),streakEl=w.querySelector(".bh-streak"),circle=w.querySelector(".bh-circle"),answers=w.querySelector(".bh-answers"),feedback=w.querySelector(".bh-feedback"),nextBtn=w.querySelector(".bh-next"),hintBtn=w.querySelector(".bh-hint"),finish=w.querySelector(".bh-finish"),finalScore=w.querySelector(".bh-final-score"),stage=w.querySelector(".bh-stage"),settings=w.querySelector(".bh-settings"),settingsToggle=w.querySelector(".bh-settings-toggle"),settingsClose=w.querySelector(".bh-settings-close"),applyBtn=w.querySelector(".bh-apply");
+  let round=0,score=0,streak=0,current=null,locked=false,advanceTimer=null;
+  let history=[],lastDen=null;
+  let config={total:6,dens:[2,3,4,5,6,8],progressive:true,showHint:true,showEquivalent:true,advance:"manual"};
+  const gcd=(a,b)=>{while(b){let t=b;b=a%b;a=t}return a};
+  const fdata=(n,d)=>{let g=gcd(n,d);return {n,d,sn:n/g,sd:d/g,reducible:g>1,key:`${n}/${d}`,valueKey:`${n/g}/${d/g}`}};
+  const shuffle=a=>{for(let i=a.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+  const frac=f=>`<span class="bh-frac"><b>${f.n}</b><i></i><b>${f.d}</b></span>`;
+  const equivalent=f=>f.reducible?`${frac(f)}<span class="bh-eq">=</span>${frac({n:f.sn,d:f.sd})}`:frac(f);
+  const readConfig=()=>{
+    let dens=[...w.querySelectorAll(".bh-den:checked")].map(x=>+x.value);if(!dens.length){dens=[2];w.querySelector('.bh-den[value="2"]').checked=true}
+    return {total:+w.querySelector(".bh-total").value||6,dens,progressive:w.querySelector(".bh-progressive").checked,showHint:w.querySelector(".bh-show-hint").checked,showEquivalent:w.querySelector(".bh-show-equivalent").checked,advance:w.querySelector(".bh-advance").value};
+  };
+  const options=answer=>{
+    const chosen=new Map([[answer.valueKey,answer]]),usedValues=new Set(history.map(h=>h.valueKey)),candidates=[];
+    for(const d of config.dens)for(let n=1;n<d;n++){let f=fdata(n,d);if(f.valueKey!==answer.valueKey)candidates.push(f)}
+    shuffle(candidates);
+    const add=predicate=>{for(const f of candidates){if(chosen.size>=4)break;if(predicate(f)&&!chosen.has(f.valueKey))chosen.set(f.valueKey,f)}};
+    add(f=>!usedValues.has(f.valueKey)&&f.d!==answer.d);
+    add(f=>!usedValues.has(f.valueKey));
+    add(f=>f.d!==answer.d);
+    add(()=>true);
+    return shuffle([...chosen.values()]);
+  };
+  const paintCircle=(n,d)=>{circle.innerHTML=fractionCircleSVG(n,d);let svg=circle.querySelector("svg");if(svg)svg.classList.add("bh-circle-svg")};
+  const update=()=>{scoreEl.textContent=score;streakEl.textContent=streak;roundEl.textContent=Math.max(1,round);totalLabel.textContent=config.total;fill.style.width=`${Math.min(100,round/config.total*100)}%`};
+  const end=()=>{clearTimeout(advanceTimer);stage.hidden=true;finish.hidden=false;finalScore.textContent=`${score} van ${config.total*10} punten`};
+  const chooseDen=()=>{
+    let pool=[...config.dens];
+    if(config.progressive&&pool.length>1){let fraction=Math.max(1,round)/config.total,sorted=[...pool].sort((a,b)=>a-b),count=Math.max(1,Math.ceil(sorted.length*fraction));pool=sorted.slice(0,count)}
+    if(pool.length>1&&lastDen!==null){const alternatives=pool.filter(d=>d!==lastDen);if(alternatives.length)pool=alternatives}
+    return pool[Math.floor(Math.random()*pool.length)];
+  };
+  const chooseFraction=()=>{
+    const usedExact=new Set(history.map(h=>h.key));
+    const usedValues=new Set(history.map(h=>h.valueKey));
+    let attempts=0,best=null;
+    while(attempts++<80){
+      const d=chooseDen(),n=1+Math.floor(Math.random()*(d-1)),f=fdata(n,d);
+      if(!usedExact.has(f.key)&&!usedValues.has(f.valueKey))return f;
+      if(!usedExact.has(f.key)&&!best)best=f;
+    }
+    return best||fdata(1,chooseDen());
+  };
+  const newRound=()=>{clearTimeout(advanceTimer);if(round>=config.total){end();return}round++;locked=false;feedback.className="bh-feedback";feedback.textContent="";nextBtn.hidden=true;nextBtn.style.display="none";current=chooseFraction();lastDen=current.d;history.push(current);paintCircle(current.n,current.d);answers.innerHTML=options(current).map(f=>`<button type="button" data-value="${f.valueKey}" aria-label="${f.n} op ${f.d}">${frac(f)}</button>`).join("");answers.querySelectorAll("button").forEach(btn=>btn.onclick=()=>{if(locked||btn.disabled)return;if(btn.dataset.value===current.valueKey){locked=true;score+=10;streak++;btn.classList.add("correct");answers.querySelectorAll("button").forEach(x=>x.disabled=true);feedback.className="bh-feedback correct";feedback.innerHTML=config.showEquivalent&&current.reducible?`✓ Juist: <span class="bh-equivalent">${equivalent(current)}</span>`:`✓ Juist: ${frac(current)}`;nextBtn.textContent=round===config.total?"Resultaat →":"Volgende →";if(config.advance==="manual"){nextBtn.hidden=false;nextBtn.style.display="inline-flex"}else{feedback.insertAdjacentHTML("beforeend",` <span class="bh-auto-note">Volgende oefening…</span>`);advanceTimer=setTimeout(newRound,1100)}}else{streak=0;btn.classList.add("wrong");btn.disabled=true;feedback.className="bh-feedback wrong";feedback.textContent="Nog niet. Tel de gekleurde delen opnieuw."}update()});update()};
+  const restart=()=>{clearTimeout(advanceTimer);round=score=streak=0;locked=false;history=[];lastDen=null;finish.hidden=true;stage.hidden=false;hintBtn.hidden=!config.showHint;update();newRound()};
+  hintBtn.onclick=()=>{if(!current||locked)return;feedback.className="bh-feedback hint";feedback.textContent=`Hint: ${current.n} gekleurde delen van ${current.d} gelijke delen.`};
+  nextBtn.onclick=()=>{if(!locked)return;newRound()};
+  const setSettingsOpen=open=>{settings.hidden=!open;settingsToggle.setAttribute("aria-expanded",String(open));settingsToggle.classList.toggle("active",open)};
+  settingsToggle.onclick=()=>setSettingsOpen(settings.hidden);
+  settingsClose.onclick=()=>setSettingsOpen(false);
+  applyBtn.onclick=()=>{config=readConfig();setSettingsOpen(false);restart()};
+  w.querySelector(".bh-again").onclick=restart;
+  restart();
+ }
+ if(type==="basketbalrekenen"){
+  const court=w.querySelector(".bb-court"),ball=w.querySelector(".bb-ball"),shadow=w.querySelector(".bb-ball-shadow"),problem=w.querySelector(".bb-problem"),scoreEl=w.querySelector(".bb-score"),streakEl=w.querySelector(".bb-streak"),clockEl=w.querySelector(".bb-clock"),msg=w.querySelector(".bb-message"),hoops=[...w.querySelectorAll(".bb-hoop")];
+  let score=0,streak=0,correct=0,answers=[],remaining=15,timer=null,locked=false,roundToken=0;
+  const rnd=n=>Math.floor(Math.random()*n)+1;
+  const clearState=()=>hoops.forEach(h=>h.classList.remove("correct","wrong","scoring","rim-hit"));
+  const restoreBall=()=>{if(ball.parentElement!==court)court.appendChild(ball);ball.className="bb-ball";ball.removeAttribute("style");shadow.removeAttribute("style")};
+  const wrongAnswers=a=>{const set=new Set([a]),spread=Math.max(3,Math.ceil(Math.abs(a)*.25));for(let d=1;set.size<3&&d<spread+12;d++){set.add(a+d);if(a-d>=0)set.add(a-d)}for(let n=0;set.size<3;n++)set.add(n);return [...set].slice(0,3)};
+  const makeProblem=()=>{
+   roundToken++;const token=roundToken;locked=false;clearState();restoreBall();clearInterval(timer);
+   let op=w.querySelector(".bb-operation").value,max=+w.querySelector(".bb-level").value;if(op==="mix")op=["+","-","×","÷"][Math.floor(Math.random()*4)];
+   let a=1,b=1;if(op==="+"){a=rnd(Math.max(1,max-1));b=rnd(Math.max(1,max-a));correct=a+b}else if(op==="-"){a=rnd(max);b=Math.floor(Math.random()*(a+1));correct=a-b}else if(op==="×"){let m=Math.max(2,Math.min(12,max));a=rnd(m);b=rnd(m);correct=a*b}else{let m=Math.max(2,Math.min(12,max));b=rnd(m);correct=rnd(m);a=b*correct}
+   problem.textContent=`${a} ${op} ${b} = ?`;answers=wrongAnswers(correct).sort(()=>Math.random()-.5);hoops.forEach((h,i)=>h.querySelector(".bb-answer").textContent=answers[i]);
+   remaining=+w.querySelector(".bb-time").value;clockEl.textContent=remaining||"∞";
+   if(remaining)timer=setInterval(()=>{if(token!==roundToken){clearInterval(timer);return}remaining--;clockEl.textContent=Math.max(0,remaining);if(remaining<=0){clearInterval(timer);locked=true;msg.textContent=`⏱ Tijd! Het juiste antwoord was ${correct}.`;setTimeout(makeProblem,1000)}},1000);
+  };
+  const shoot=i=>{
+   if(locked)return;locked=true;clearInterval(timer);clearState();const hoop=hoops[i],rim=hoop.querySelector(".bb-rim"),rr=rim.getBoundingClientRect(),cr=court.getBoundingClientRect(),targetX=rr.left-cr.left+rr.width/2,rimY=rr.top-cr.top+rr.height/2,ballR=ball.getBoundingClientRect().height/2,rimBottom=cr.height-rimY-ballR,startX=cr.width/2,apexX=startX+(targetX-startX)*.58,apexBottom=Math.min(cr.height-ballR-14,rimBottom+Math.min(215,cr.height*.34)),ok=answers[i]===correct,token=roundToken;
+   ball.style.transition="left .38s cubic-bezier(.18,.68,.28,1),bottom .38s cubic-bezier(.08,.76,.22,1),transform .38s linear";ball.style.left=apexX+"px";ball.style.bottom=apexBottom+"px";ball.style.transform="translateX(-50%) rotate(325deg) scale(.88)";shadow.style.left=(startX+(targetX-startX)*.38)+"px";shadow.style.width="32px";shadow.style.opacity=".07";
+   setTimeout(()=>{if(token!==roundToken)return;ball.style.transition="left .26s linear,bottom .26s cubic-bezier(.42,.03,.82,.36),transform .26s linear";ball.style.left=targetX+"px";ball.style.bottom=(rimBottom+ballR*.78)+"px";ball.style.transform="translateX(-50%) rotate(585deg) scale(.73)";shadow.style.left=targetX+"px"},375);
+   setTimeout(()=>{if(token!==roundToken)return;if(ok){hoop.classList.add("correct","scoring");hoop.appendChild(ball);ball.removeAttribute("style");ball.className="bb-ball bb-in-hoop";void ball.offsetWidth;requestAnimationFrame(()=>requestAnimationFrame(()=>ball.classList.add("bb-drop-through")));let pts=remaining>0&&remaining<=5?3:1;score+=pts;streak++;msg.textContent=`🏀 Raak! +${pts}`}else{hoop.classList.add("wrong","rim-hit");streak=0;msg.textContent=`Bijna! Het juiste antwoord is ${correct}.`;const dir=targetX<cr.width/2?-1:1;ball.style.transition="left .3s ease-out,bottom .3s ease-in,transform .3s linear";ball.style.left=(targetX+dir*90)+"px";ball.style.bottom=(rimBottom-30)+"px";ball.style.transform=`translateX(-50%) rotate(${dir*850}deg) scale(.68)`}scoreEl.textContent=score;streakEl.textContent=streak;setTimeout(()=>{if(token===roundToken)makeProblem()},1150)},635);
+  };
+  hoops.forEach((h,i)=>h.onclick=()=>shoot(i));w.querySelector(".bb-new").onclick=()=>{score=0;streak=0;scoreEl.textContent="0";streakEl.textContent="0";msg.textContent="Nieuw spel!";makeProblem()};[".bb-operation",".bb-level",".bb-time"].forEach(sel=>w.querySelector(sel).onchange=makeProblem);makeProblem();
+ }
+
+ if(type==="rekenrace"){
+   let ended=false,finish=10;
+   const sides={a:{score:0,answer:0,q:w.querySelector(".rr-question-a"),box:w.querySelector(".rr-answers-a"),fb:w.querySelector(".rr-feedback-a"),scoreEl:w.querySelector(".rr-score-a"),runner:w.querySelector(".rr-runner-a"),name:w.querySelector(".rr-name-a")},b:{score:0,answer:0,q:w.querySelector(".rr-question-b"),box:w.querySelector(".rr-answers-b"),fb:w.querySelector(".rr-feedback-b"),scoreEl:w.querySelector(".rr-score-b"),runner:w.querySelector(".rr-runner-b"),name:w.querySelector(".rr-name-b")}};
+   const rnd=(a,b)=>Math.floor(Math.random()*(b-a+1))+a;
+   const selectedOps=()=>{let x=[...w.querySelectorAll(".rr-op:checked")].map(el=>el.value);if(!x.length){let first=w.querySelector('.rr-op[value="add"]');first.checked=true;x=["add"]}return x};
+   const makeProblem=()=>{let max=Math.max(10,Math.min(1000,+w.querySelector(".rr-max").value||100)),ops=selectedOps(),op=ops[rnd(0,ops.length-1)],a,b,answer,symbol;if(op==="add"){a=rnd(0,max);b=rnd(0,max-a);answer=a+b;symbol="+"}else if(op==="sub"){a=rnd(0,max);b=rnd(0,a);answer=a-b;symbol="−"}else if(op==="mul"){let lim=Math.min(12,Math.max(2,Math.floor(Math.sqrt(max))));a=rnd(1,lim);b=rnd(1,lim);answer=a*b;symbol="×"}else{b=rnd(1,12);answer=rnd(1,Math.min(12,Math.max(1,Math.floor(max/b))));a=b*answer;symbol="÷"}return {text:`${a} ${symbol} ${b} = ?`,answer}};
+   const optionsFor=answer=>{let set=new Set([answer]),spread=Math.max(5,Math.min(25,Math.ceil(Math.abs(answer)*.25)));while(set.size<6){let n=Math.max(0,answer+rnd(-spread,spread));set.add(n)}return [...set].sort(()=>Math.random()-.5)};
+   const paintScore=side=>{let p=sides[side];p.scoreEl.textContent=`${p.score} / ${finish}`;let pct=Math.min(86,(p.score/finish)*86);p.runner.style.left=`calc(${pct}% + 7px)`};
+   const next=side=>{if(ended)return;let p=sides[side],task=makeProblem();p.answer=task.answer;p.q.textContent=task.text;p.fb.textContent="";p.box.innerHTML=optionsFor(task.answer).map(n=>`<button type="button" data-n="${n}">${n}</button>`).join("");p.box.querySelectorAll("button").forEach(btn=>btn.onpointerdown=e=>{e.preventDefault();answer(side,+btn.dataset.n,btn)})};
+   const answer=(side,value,btn)=>{if(ended||btn.disabled)return;let p=sides[side];if(value!==p.answer){btn.disabled=true;btn.classList.add("wrong");p.fb.textContent="Nog eens proberen";return}p.box.querySelectorAll("button").forEach(x=>x.disabled=true);btn.classList.add("correct");p.score++;paintScore(side);p.runner.classList.add("rr-sprint");setTimeout(()=>p.runner.classList.remove("rr-sprint"),180);p.fb.textContent="✓ Juist! Vooruit!";if(p.score>=finish){ended=true;w.querySelectorAll(".rr-answers-a button,.rr-answers-b button").forEach(x=>x.disabled=true);w.querySelector(".rr-result").innerHTML=`<strong>🏆 ${p.name.value.trim()||`Speler ${side==="a"?1:2}`} wint!</strong><span>De finish is bereikt.</span>`;return}setTimeout(()=>next(side),300)};
+   const reset=()=>{ended=false;finish=Math.max(5,+w.querySelector(".rr-finish").value||10);w.querySelector(".rr-result").innerHTML="";Object.entries(sides).forEach(([side,p])=>{p.score=0;p.runner.style.left="7px";paintScore(side);next(side)})};
+   w.querySelector(".rr-new").onclick=reset;w.querySelector(".rr-finish").onchange=reset;w.querySelector(".rr-max").onchange=reset;w.querySelectorAll(".rr-op").forEach(x=>x.onchange=()=>{selectedOps();reset()});reset();
+ }
  if(type==="richdaystarter"){const facts=["Een octopus heeft drie harten.","Bijen vertellen met een dans waar voedsel te vinden is.","Een dag telt 86.400 seconden.","Een volwassen mens heeft meestal 206 botten.","Licht reist sneller dan geluid.","De maan weerkaatst het licht van de zon."];const week=d=>{let x=new Date(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate()));x.setUTCDate(x.getUTCDate()+4-(x.getUTCDay()||7));let y=new Date(Date.UTC(x.getUTCFullYear(),0,1));return Math.ceil((((x-y)/86400000)+1)/7)};const season=d=>{let md=(d.getMonth()+1)*100+d.getDate();return md>=1221||md<321?"❄️ Winter":md<621?"🌷 Lente":md<921?"☀️ Zomer":"🍂 Herfst"};const tick=()=>{let d=new Date();w.querySelector(".rds-day").textContent=d.toLocaleDateString("nl-BE",{weekday:"long"});w.querySelector(".rds-date").textContent=d.toLocaleDateString("nl-BE",{day:"numeric",month:"long",year:"numeric"});w.querySelector(".rds-clock").textContent=d.toLocaleTimeString("nl-BE",{hour:"2-digit",minute:"2-digit"});w.querySelector(".rds-week").textContent=week(d);w.querySelector(".rds-season").textContent=season(d)};const setFact=x=>{w.querySelector(".rds-fact").textContent=x;w.querySelector(".rds-fact-edit").value=x};const fact=()=>setFact(facts[Math.floor(Math.random()*facts.length)]);const pairs=[[".rds-message",".rds-message-out"],[".rds-word",".rds-word-out"],[".rds-meaning",".rds-meaning-out"],[".rds-sentence",".rds-sentence-out"],[".rds-spelling",".rds-spelling-out"],[".rds-reading",".rds-reading-out"],[".rds-languageq",".rds-languageq-out"]];pairs.forEach(([a,b])=>{let inp=w.querySelector(a),o=w.querySelector(b);o.textContent=inp.value;inp.oninput=()=>o.textContent=inp.value});tick();fact();w.querySelector(".rds-newfact").onclick=fact;w.querySelector(".rds-fact-edit").oninput=e=>w.querySelector(".rds-fact").textContent=e.target.value}
  if(type==="pdfboard"){const file=w.querySelector(".pdf-file"),upload=w.querySelector(".pdf-upload-state"),view=w.querySelector(".pdf-view"),frame=w.querySelector(".pdf-frame"),canvas=w.querySelector(".pdf-ink"),ctx=canvas.getContext("2d");let url=null,mode="none",drawing=false,last=null;const resize=()=>{let r=canvas.getBoundingClientRect();if(r.width&&r.height&&(canvas.width!==Math.round(r.width)||canvas.height!==Math.round(r.height))){let old=document.createElement("canvas");old.width=canvas.width;old.height=canvas.height;old.getContext("2d").drawImage(canvas,0,0);canvas.width=Math.round(r.width);canvas.height=Math.round(r.height);ctx.drawImage(old,0,0,canvas.width,canvas.height)}};const setMode=m=>{mode=mode===m?"none":m;canvas.classList.toggle("active",mode!=="none");w.querySelector(".pdf-write").classList.toggle("active",mode==="pen");w.querySelector(".pdf-marker").classList.toggle("active",mode==="marker");w.querySelector(".pdf-erase").classList.toggle("active",mode==="erase")};const load=f=>{if(!f||f.type!=="application/pdf"){notify("Kies een PDF-bestand.");return}if(url)URL.revokeObjectURL(url);url=URL.createObjectURL(f);frame.src=url;upload.hidden=true;view.hidden=false;setTimeout(resize,250)};file.onchange=()=>load(file.files[0]);w.querySelector(".pdf-change").onclick=()=>file.click();w.querySelector(".pdf-write").onclick=()=>setMode("pen");w.querySelector(".pdf-marker").onclick=()=>setMode("marker");w.querySelector(".pdf-erase").onclick=()=>setMode("erase");w.querySelector(".pdf-clear-ink").onclick=()=>ctx.clearRect(0,0,canvas.width,canvas.height);const pos=e=>{let r=canvas.getBoundingClientRect();return {x:(e.clientX-r.left)*canvas.width/r.width,y:(e.clientY-r.top)*canvas.height/r.height}};canvas.onpointerdown=e=>{if(mode==="none")return;resize();drawing=true;last=pos(e);canvas.setPointerCapture?.(e.pointerId)};canvas.onpointermove=e=>{if(!drawing)return;let p=pos(e);ctx.save();ctx.lineCap="round";ctx.lineJoin="round";if(mode==="erase"){ctx.globalCompositeOperation="destination-out";ctx.lineWidth=28}else{ctx.globalCompositeOperation="source-over";ctx.strokeStyle=mode==="marker"?"rgba(254,224,32,.45)":"#033663";ctx.lineWidth=mode==="marker"?18:4}ctx.beginPath();ctx.moveTo(last.x,last.y);ctx.lineTo(p.x,p.y);ctx.stroke();ctx.restore();last=p};canvas.onpointerup=canvas.onpointercancel=()=>drawing=false;new ResizeObserver(resize).observe(w.querySelector(".pdf-layer"))}
  if(type==="whiteboard")wireCanvas(w);

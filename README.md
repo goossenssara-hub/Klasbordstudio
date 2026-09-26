@@ -145,3 +145,7 @@ Klok opnieuw vormgegeven; klasvenster sluit/open robuuster; dagplanning uitbreid
 
 ## V63
 GGD/KGV: de leerlingbediening (inclusief Controleer) blijft nu zichtbaar en bereikbaar in leerlingpreview en volledig scherm. De GGD/KGV-body kan scrollen wanneer de oefening hoger is dan het scherm.
+
+
+## V73 — Basketbal rekenen
+Native spelmodule onder **Spelen** met bewerkingen, niveau, shotclock, score/reeks en de verfijnde basketbalanimatie.
